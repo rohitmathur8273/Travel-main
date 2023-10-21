@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WEBSITE</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <!-- jquery link  -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- google font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- home section start...  -->
+    <!-- header section start -->
+    <div class="phone-logo">
+      <a href="#logo">TRA<span>VELI</span>CITY</a>
+    </div>
+    <header>
+      <div class="humburger">&#9776</div>
+        <div id="logo">
+            <a href="#logo">TRA<span>VELI</span>CITY</a>
+        </div>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+                <li><a href="./booking.html">Book</a></li>
+                <li><a href="./packaging.html">Packages</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./review.html">Review</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./booking.html">Book</a></li>
+                <li><a href="./packaging.html">Packages</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./review.html">Review</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user">
+            <img src="./Image/magnifying-glass.png" alt="" class="search-icon">
+            <img src="./Image/user.png" alt="" class="user-icon">
+        </div>
+
+        <!-- search section start -->
+        <form action="" class="search-bar-container" id="search-bar">
+            <input type="search" name="search" placeholder="Search Cities..." class="search-bar">
+            <a href="#">Search</a>
+        </form>
+        <!-- search section end -->
+    </header>  
+
+      <!-- login form start...   -->
+    <div class="login-container">
+      <form action="" class="login-container-form" autocomplete="on">
+        <div class="login-close">&times;</div>
+        <h3>LOGIN </h3>
+        <input type="email" name="email" placeholder="Enter Email">
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="checkbox" id="remember">
+        <label for="remember">I Agree</label>
+        <input type="submit" value="LOGIN" class="btn btn-light btn-outline-warning">
+        <p><a href="#">Forget Password</a></p>
+        <p><a href="#">Not An Account/ <span class="Signup-btn">Sign Up</span></a></p>
+      </form>
+    </div>
+      <!-- login form end...  -->
+
+    <!-- sign up form start...  -->
+    <div class="signup-container">
+      <form action="" class="signup-container-form" autocomplete="on">
+        <div class="signup-close">&times;</div>
+        <h3>SIGN UP</h3>
+        <input type="text" name="name" placeholder="Enter Full Name">
+        <input type="tel" name="tel" placeholder="Enter Mobile Number" pattern="[0-9]{10}">
+        <input type="email" name="email" placeholder="Enter Email">
+        <input type="date" name="date" placeholder="Enter DOB">
+        <input type="password" name="password" placeholder="Enter Password" id="security">
+        <input type="password" name="password" placeholder="Confirm Password" id="security">
+        <input type="checkbox" id="confirmation">
+        <label for="confirmation">I accept <a href="#">Terms & Condition</a> and <a href="#">Privacy Policy</a></label>
+        <input type="submit" value="SIGN-UP" class="btn btn-light btn-outline-warning" id="Sign-up-complete">
+        <p><a href="#">Already Have an Acoount? <span class="login-btn">Login</span></a></p>
+      </form>
+    </div>
+    <!-- sign up form end...  -->
+
+
+<!-- header section end..  -->
+
+<section id="home">
+  <video src="./Video/Pexels Videos 1093662-1.m4v" autoplay loop muted></video>
+</div>
+
+
+<div class="caption">
+  <h1>ADVENTURE IS WORLDWORTH</h1>
+  <h5>Collect Moments Not Things</h5>
+  <button class="btn btn-outline-warning" id="game">Discover More</button>
+</div>
+</section>
+
+<!-- home section end.....  -->
+
+
+<!-- Booking section start..... -->
+<section id="booking-section">
+  <h1>
+  <span>B</span>
+  <span>O</span>
+  <span>O</span>
+  <span>K</span>
+  &nbsp;&nbsp;
+  <span>N</span>
+  <span>O</span>
+  <span>W</span>
+</h1> 
+
+<div class="booking">
+  <div class="booking-box">
+    <img src="././Image/booking.jpg" alt="">
+  </div>
+  <div class="booking-box">
+    <h3>Booking</h3>
+    <form action="#">
+      <label for="">Where To Go</label><br>
+      <input type="text" name="text" placeholder="Locate the Place...">
+      <br>
+      <br>
+      <label for="">Number of Guests</label><br>
+      <input type="number" name="number" placeholder="Number of guests...">
+      <br>
+      <br>
+      <label for="">Arrival Date</label><br>
+      <input type="date" name="date" placeholder="Arrival Date...">
+      <br>
+      <br>
+      <label for="">Departure Date</label><br>
+      <input type="date" name="date" placeholder="Departure Date...">
+      <br>
+      <br>
+      <label for="">Number of Days</label><br>
+      <input type="number" name="number" placeholder="Number of Days...">
+      <br>
+      <br>
+      <button type="submit"class="btn btn-light btn-outline-warning">BOOK NOW</button>
+    </form>
+  </div>
+</div>
+
+</section>
+<!-- Booking section end......  -->
+
+
+<!-- Packages section start....  -->
+<section id="packaging-section">
+  <h1>
+    <span>P</span>
+    <span>A</span>
+    <span>C</span>
+    <span>K</span>
+    <span>A</span>
+    <span>G</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+  </h1>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="packaging">
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="././Image/singapore.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">SINGAPORE</h4>
+            <img src="./Image/3-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$90 <span><del>$120</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+          <div class="packaging-box">
+            <div class="packaging-box-header">
+              <img src="./Image/hawaii.jpg" alt="">
+            </div>
+            <div class="packaging-box-footer">
+              <h4><img src="./Image/location.png" alt="">HAWAII</h4>
+              <img src="./Image/5-star.png" alt="" class="star">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+              <div class="price">
+                <h4>$200 <span><del>$250</del></span></h4>
+              </div>
+              <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="./Image/dubai.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">DUBAI</h4>
+            <img src="./Image/4-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$130 <span><del>$180</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+          </div>
+          <div class="carousel-item">
+          <div class="packaging">
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="./Image/India.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">INDIA</h4>
+            <img src="./Image/3-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$60 <span><del>$100</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+          <div class="packaging-box">
+            <div class="packaging-box-header">
+              <img src="./Image/japan.jpg" alt="">
+            </div>
+            <div class="packaging-box-footer">
+              <h4><img src="./Image/location.png" alt="">JAPAN</h4>
+              <img src="./Image/5-star.png" alt="" class="star">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+              <div class="price">
+                <h4>$130 <span><del>$160</del></span></h4>
+              </div>
+              <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="./Image/thailand.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">THAILAND</h4>
+            <img src="./Image/4-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$110 <span><del>$150</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+          </div>
+          <div class="carousel-item">
+          <div class="packaging">
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="./Image/USA.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">U.S.A</h4>
+            <img src="./Image/3-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$190 <span><del>$260</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+          <div class="packaging-box">
+            <div class="packaging-box-header">
+              <img src="./Image/austraila.jpg" alt="">
+            </div>
+            <div class="packaging-box-footer">
+              <h4><img src="./Image/location.png" alt="">AUSTRALIA</h4>
+              <img src="./Image/5-star.png" alt="" class="star">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+              <div class="price">
+                <h4>$180 <span><del>$200</del></span></h4>
+              </div>
+              <button class="btn btn-outline-warning">Book Now</button>
+          </div>
+        </div>
+
+        <div class="packaging-box">
+          <div class="packaging-box-header">
+            <img src="./Image/canada.jpg" alt="">
+          </div>
+          <div class="packaging-box-footer">
+            <h4><img src="./Image/location.png" alt="">CANADA</h4>
+            <img src="./Image/4-star.png" alt="" class="star">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <div class="price">
+              <h4>$185 <span><del>$200</del></span></h4>
+            </div>
+            <button class="btn btn-outline-warning">Book Now</button>
+        </div>
+      </div>
+    </div> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>     
+
+</section>
+
+<!-- Packages section end....  -->
+
+
+<!-- service section start.....  -->
+<section id="service-section">
+  <h1>
+    <span>S</span>
+    <span>E</span>
+    <span>R</span>
+    <span>V</span>
+    <span>I</span>
+    <span>C</span>
+    <span>E</span>
+    <span>S</span>
+  </h1>
+
+  <div class="service">
+    <div class="service-box">
+      <img src="./Image/hotel.png" alt="">
+      <h3>5STAR-HOTEL</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+    <div class="service-box">
+      <img src="./Image/canned-food.png" alt="">
+      <h3>FOOD AND DRINK</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+    <div class="service-box">
+    <img src="./Image/horn.png" alt="">
+      <h3>SAFTY GUIDE</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+    <div class="service-box">
+    <img src="./Image/ecology.png" alt="">
+      <h3>AROUND THE WORLD</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+    <div class="service-box">
+    <img src="./Image/airplane.png" alt="">
+      <h3>FATEST TRAVEL</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+    <div class="service-box">
+    <img src="./Image/walker.png" alt="">
+      <h3>ADVENTURES</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.suscipit dolorem sed nobis mollitia! Doloremque architecto accusantium, earum voluptate est aliquid asper</p>
+    </div>
+  </div>
+</section>
+
+<!-- service section end.....  -->
+
+
+
+<!-- Gallery section start.....  -->
+<section id="gallery-section">
+  <h1>
+    <span>G</span>
+    <span>A</span>
+    <span>L</span>
+    <span>L</span>
+    <span>E</span>
+    <span>R</span>
+    <span>Y</span>
+  </h1>
+
+  <div class="gallery">
+    <div class="gallery-box">
+      <img src="./Image/austraila.jpg" alt="">
+     <div class="overlay">
+       <h3>Austraila</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/canada.jpg" alt="">
+     <div class="overlay">
+       <h3>Canada</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/dubai.jpg" alt="">
+     <div class="overlay">
+       <h3>Dubai</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/hawaii.jpg" alt="">
+     <div class="overlay">
+       <h3>Hawaii</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/India.jpg" alt="">
+     <div class="overlay">
+       <h3>India</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/japan.jpg" alt="">
+     <div class="overlay">
+       <h3>Japan</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/singapore.jpg" alt="">
+     <div class="overlay">
+       <h3>Singapore</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/thailand.jpg" alt="">
+     <div class="overlay">
+       <h3>Thailand</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+
+    <div class="gallery-box">
+      <img src="./Image/USA.jpg" alt="">
+     <div class="overlay">
+       <h3>U.S.A</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium.</p>
+       <button class="btn btn-outline-warning">See More</button>
+     </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Gallery section end.....  -->
+
+
+
+<!-- Review Section Start  -->
+  <section id="review-section">
+    <h1>
+      <span>R</span>
+      <span>E</span>
+      <span>V</span>
+      <span>I</span>
+      <span>E</span>
+      <span>W</span>
+    </h1>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="review-group">
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-1.jpg" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Ravi Kumar</h4> 
+                  <img src="./Image/3-star.png" alt="" class="star">    
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+              
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-3.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Anupriya Kumari</h4> 
+                  <img src="./Image/5-star.png" alt="" class="star">    
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="review-group">
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-2.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Sanjeev Kapoor</h4>  
+                  <img src="./Image/5-star.png" alt="" class="star">   
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-6.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Akshay Sharma</h4>  
+                  <img src="./Image/3-star.png" alt="" class="star">   
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="review-group">
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-4.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Rahul Mittal</h4>   
+                  <img src="./Image/4-star.png" alt="" class="star">  
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+              
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-6.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Yuvraj Singh</h4> 
+                  <img src="./Image/5-star.png" alt="" class="star">    
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-group">
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-4.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Rahul Mittal</h4>   
+                  <img src="./Image/4-star.png" alt="" class="star">  
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-card-header">
+                  <img src="./Image/client-5.jfif" alt="">
+                </div>
+                <div class="review-card-footer"> 
+                  <h4>Manish Sharma</h4>  
+                  <img src="./Image/4-star.png" alt="" class="star">   
+                  <p>Lorem ipsum dolor sit amet <br>earum? A sed illo ducimus, quidem recusandae ex dolores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </section>
+
+<!-- Review Section End  -->
+
+
+<!-- Contact Section start  -->
+  <section id="contact-section">
+    <h1>
+      <span>C</span>
+      <span>O</span>
+      <span>N</span>
+      <span>T</span>
+      <span>A</span>
+      <span>C</span>
+      <span>T</span>
+    </h1>
+    <div class="contact-box">
+      <div class="left-contact-box">
+        <img src="./Image/contact theme.jpg" alt="">
+      </div>
+      <div class="right-contact-box">
+        <h3>Get In Touch</h3>
+        <p>We would love to respond to your queries and help you succeed.Feel free to get in touch with us</p>
+        <form action="" id="contact-form">
+          <label for="">Name:</label>
+          <input type="text" name="username" placeholder="Enter Full Name">
+          <label for="">Mobile No:</label>
+          <input type="tel" name="mobilenumber" placeholder="Enter Mobile Number" pattern="[0-9]{10}">
+          <br>
+          <br>
+          <label for="">Email:</label>
+          <input type="email" name="useremail" placeholder="Enter Email">
+          <label for="">Date of Birth:</label>
+          <input type="date" name="userDob" placeholder="Enter Date Of Birth">
+          <br>
+          <br>
+          <label for="">Remark</label>
+          <textarea name="" id="" cols="86" rows="7" placeholder="Write Something..."></textarea>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-outline-warning">Send Message</button>
+          <button type="reset" class="btn btn-outline-danger">Reset</button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+<!-- Contact Section End  -->
+
+
+
+<!-- agency section start  -->
+<section id="agency-section">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="agency-box">
+       <img src="./Image/travel9-removebg-preview.png" alt="">
+       <img src="./Image/travel1-removebg-preview.png" alt="">
+       <img src="./Image/travel2-removebg-preview.png" alt="">
+       <img src="./Image/travel3-removebg-preview.png" alt="">
+      </div>
+     </div>
+      <div class="carousel-item">
+        <div class="agency-box">
+       <img src="./Image/travel4-removebg-preview.png" alt="">
+       <img src="./Image/travel9-removebg-preview.png" alt="">
+       <img src="./Image/travel1-removebg-preview.png" alt="">
+       <img src="./Image/travel5-removebg-preview.png" alt="">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="agency-box">
+       <img src="./Image/travel7-removebg-preview.png" alt="">
+       <img src="./Image/travel8-removebg-preview.png" alt="">
+       <img src="./Image/travel5-removebg-preview.png" alt="">
+       <img src="./Image/travel6-removebg-preview.png" alt="">
+      </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- agency section end  -->
+
+
+
+<!-- information section start  -->
+  <section id="information-section">
+    <div class="information-box">
+      <div class="link-box">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum temporibus repudiandae nesciunt voluptates modi maxime labore necessitatibus repellat atque eius vero, dignissimos explicabo ad iusto cumque assumenda fugiat nobis?</p>
+      </div>
+      <div class="link-box">
+        <h4>Branch Location</h4>
+        <ul>
+          <li><a href="">Japan</a></li>
+          <li><a href="">India</a></li>
+          <li><a href="">Austraila</a></li>
+          <li><a href="">Cape Town</a></li>
+          <li><a href="">London</a></li>
+        </ul>
+      </div>
+      <div class="link-box">
+        <h4>Quicks Links</h4>
+        <ul>
+          <li><a href="travel.html">Home</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="packaging.html">Packages</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="link-box">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="http://www.facebook.com">Facebook</a></li>
+          <li><a href="http://www.instagram.com">Instagram</a></li>
+          <li><a href="http://www.twitter.com">Twitter</a></li>
+          <li><a href="http://www.linkedin.com">Linkedin</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <footer>
+      Created By <span>Code With Shyam sundar </span> &verbar; All Right Reserved&excl;
+    </footer>
+
+  </section>
+
+<!-- information section end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- juery coding start -->
+
+
+<!-- header start -->
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll>550){
+      $('header').css("background", "grey");
+    }
+    else{
+      $('header').css("background","black")
+    };
+ });
+});
+// header end
+
+
+// search-bar start
+$(document).ready(function(){
+    $(window).scroll(function(){
+    var searchBar = $(window).scrollTop();
+    if(searchBar>550){
+      $('#search-bar').css("background", "grey");
+    }
+    else{
+      $('#search-bar').css("background","black")
+    };
+ });
+});
+
+// search-bar end 
+
+// signup-container start 
+
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.signup-container').addClass('active')
+  },7000)
+})
+
+// signup-container end 
+
+
+
+
+
+// media queries jquery start 
+  $(document).ready(function(){
+    $('.humburger').click(function(){
+      $('.menu-bar').toggle('slow')
+    })
+
+    $(window).scroll(function(){
+      $('.menu-bar').slideUp('slow')
+    })
+  })
+
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+    var menuBar = $(window).scrollTop();
+    if(menuBar>550){
+      $('.menu-bar').css("background", "grey");
+    }
+    else{
+      $('.menu-bar').css("background","black")
+    };
+ });
+});
+
+
+
+// media queries jquery end 
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- juery coding end  -->
+
+
+    <!-- javascript link  -->
+    <script src="./JAVASCRIPT/script.js"></script>
+    <script src="./JAVASCRIPT/bootstrap.min.js"></script>
+</body>
+</html>

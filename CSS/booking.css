@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+/* header section start....  */
+
+
+header{
+    width: 100%;
+    min-height: 5rem;;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+#logo a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff9933;
+}
+
+#logo a span{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0px 1rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff9933;
+}
+
+.humburger{
+    display: none;
+}
+
+.phone-logo{
+    display: none;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.search-icon{
+    width: 2rem;
+    margin: 0 0.7rem;
+}
+
+.user-icon{
+    width: 2rem;
+    margin: 0 0.7rem;
+}
+
+.search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: black;
+    padding: 10px 20px;
+    z-index: 1001; 
+    transition: 0.5s;
+    clip-path: polygon(0 0, 0 100%, 0 0, 0 0);
+}
+
+.search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.search-bar-container img{
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.search-bar{
+    width: 90%;
+    padding: 5px 5px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.search-bar input{
+    outline: none;
+}
+
+.search-bar-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.search-bar-container a:hover{
+    color: #ff9933;
+}
+
+/* Login form start....  */
+
+.login-container{
+    display: none;
+}
+
+.login-container.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-container-form{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid white;
+    background-color: white;
+    padding: 0.3rem 2rem;
+    border-radius: 3px;
+}
+
+.login-container-form h3{
+    text-align: center;
+    color: #ff9933;
+}
+
+.login-container-form input{
+    margin:10px 0px;
+    padding: 3px 5px;
+    outline: none;
+}
+
+.login-container-form p a{
+    text-decoration: none;
+
+}
+
+.login-container-form span{
+    color: #ff9933;
+}
+
+.login-close{
+    text-align: end;
+    font-size: 2rem;
+}
+
+
+/* login form end...  */
+
+
+/* signup form start....  */
+.signup-container{
+    display: none;
+}
+
+.signup-container.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signup-container-form{
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    width: 25rem;
+    border: 1px solid white;
+    background-color: white;
+    padding: 0rem 2rem;
+    border-radius: 3px;
+}
+
+.signup-container-form h3{
+    text-align: center;
+    color: #ff9933;
+}
+
+.signup-container-form input{
+    margin:7px 0px;
+    padding: 2px 5px;
+    outline: none;
+}
+
+.signup-container-form label a{
+    text-decoration: none;
+}
+
+.signup-container-form span{
+    color: #ff9933;
+}
+
+.signup-container-form p a{
+    text-decoration: none;
+}
+
+.signup-close{
+    text-align: end;
+    font-size: 2rem;
+}
+
+
+/* signup form end....  */
+
+
+/* header section end...  */
+
+
+
+
+/* booking section start  */
+#booking-section{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background: url('../Image/booking-section.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgb(122, 211, 247),rgba(0,0,0,0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.booking-box{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-booking-box{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+
+.left-booking-box h1{
+    color:#ff9933;
+    font-weight: 500;
+}
+
+.left-booking-box span{
+    color: gold;
+}
+
+.left-booking-box p{
+    color:#fff;
+    font-size: 18px;
+}
+
+.right-booking-box{
+    width: 50%;
+    height: 80%;
+    box-shadow: 0 0 7px black;
+}
+
+.right-booking-box h3{
+    color: gold;
+    text-align: center;
+}
+
+.right-booking-box p{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.right-booking-box form{
+    font-size: 18px;
+    padding: 0.6rem 3rem;
+}
+
+.right-booking-box label{
+    display: block;
+    color:black;
+    padding: 0.3rem 0;
+}
+
+.right-booking-box form input{
+    width: 100%;
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid white;
+}
+
+
+
+/* booking section end  */
+
+
+
+
+
+/* agency section start  */
+
+#agency-section{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(243, 242, 242);
+}
+
+.agency-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.agency-box img{
+    width: 15%;
+}
+
+/* agency section end  */
+
+
+
+/* information section start  */
+
+#information-section{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.information-box{
+    width: 90%;
+    height: 90%;
+    border-bottom: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-box{
+    width: 23%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 8px;
+}
+
+.link-box h4{
+    color: #fff;
+}
+
+.link-box p{
+    color:rgb(206, 203, 203);
+}
+
+.link-box ul{
+    list-style: none;
+}
+
+.link-box ul li a{
+   text-decoration: none;
+   color:rgb(179, 177, 177);
+}
+
+footer{
+    width: 90%;
+    height: 10%;
+    text-align: center;
+    color:rgb(206, 203, 203);
+}
+
+footer span{
+    color: #ff9933;
+}
+
+/* information section end  */
+
+
+
+
+
+
+
+
+
+/* media queries tablet start  */
+@media (max-width:768px){
+
+    html{
+        font-size: 16px;
+    }
+    
+    .humburger{
+        display: block;
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 25px;
+        padding: 0 7px;
+    }    
+
+    #logo{
+        padding-left: 8rem ; 
+    }
+
+    .phone-logo{
+        display: none;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    .menu-bar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:black;
+        z-index: -1;
+    }
+
+    .menu-bar ul{
+        list-style: none;
+        font: 1.2rem;
+    }
+
+    .menu-bar ul li a{
+        text-decoration: none;
+        padding: 0px 1rem;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    .menu-bar ul li a:hover{
+        color: #ff9933;
+    }
+
+    #booking-section{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .booking-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-booking-box{
+        width: 100%;
+    }
+
+    .right-booking-box{
+        width: 80%;
+    }
+    
+    #agency-section{
+        overflow: hidden;
+        width: 100%;
+        height: 20vh;
+    }
+
+    #agency-section img{
+        width: 14vh;
+    }
+
+    #information-section{
+        width: 100%;
+        overflow: hidden;
+        height: 50vh;
+    }
+
+}
+
+/* media queries tablet end  */
+
+
+
+
+
+
+
+
+
+
+/* media queries phone start  */
+@media (max-width:360px){
+    html{
+        font-size: 16px;
+        overflow: auto;
+    }
+
+    .login-container-form{
+        width: 90%;
+    }
+
+    .signup-container-form{
+        width: 90%;
+    }
+
+    header{
+        width: 100%;
+        min-height: 5rem;;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.6s;
+    }
+
+    .phone-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        background-color: black;
+    }
+
+    .phone-logo a{
+        font-weight: bold;
+        text-decoration: none;
+        color: #ff9933;
+    }
+
+    .phone-logo a span{
+        color: #fff;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #user img{
+        width: 1.6rem;
+    }
+    
+    .search-icon{
+        margin-left: 5rem;
+    }
+
+    #booking-section{
+        overflow: hidden;
+        width: 100%;
+        height: 160vh;
+    }
+
+    .left-booking-box{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right-booking-box{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right-booking-box form{
+        padding: 0.1rem 1rem;
+    }
+
+
+
+
+    #agency-section{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #agency-section img{
+        width: 14vh;
+    }
+
+    #information-section{
+        width: 100%;
+        overflow: hidden;
+        height: 140vh;
+    }
+
+}
+
+
+
+/* media queries phone end  */
